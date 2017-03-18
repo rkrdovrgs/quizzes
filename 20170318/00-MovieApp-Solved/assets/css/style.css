@@ -1,0 +1,31 @@
+.content {
+    padding: 75px 0 50px;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+}
+
+footer hr {
+    margin: 0 0 10px;
+}
+
+.command {
+    cursor: pointer;
+}
+
+.thumbnail.movie-result a > img {
+    height: 200px;
+}
+
+.thumbnail.movie-result h4 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.page-header small {
+    font-size: 15px;
+    display: block;
+}

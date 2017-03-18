@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movies</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css"></link>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Movie App</a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                    <div class="input-group" id="search-box">
+                        <input type="text" class="form-control" placeholder="Movie name" aria-describedby="basic-addon1">
+                        <span class="input-group-addon command" id="search">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="list-group" id="years">
+                        <template id="tmpl-year">
+                            <a href="#" class="list-group-item">Year 1</a>
+                        </template>
+                    </div>
+                    <hr>
+                    <div class="input-group" id="year-box">
+                        <input type="text" class="form-control" placeholder="Add year" aria-describedby="basic-addon1">
+                        <span class="input-group-addon command">
+                            <i class="glyphicon glyphicon-plus"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9" id="partial-view">
+                <!-- Template movie results -->
+                <template id="tmpl-movie-results">
+                    <div class="row">
+                        <template id="tmpl-movie-result">
+                            <div class="col-sm-4 col-lg-4 col-md-4">
+                                <div class="thumbnail movie-result">
+                                    <a href="#">
+                                        <img src="http://placehold.it/200x200" alt="">
+                                        <div class="caption">
+                                            <h4 class="pull-right movie-year">0000</h4>
+                                            <h4 class="movie-title">Title</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </template>
+                <!-- / #tmpl-movie-results -->
+
+                <!-- Template movie details -->
+                <template id="tmpl-movie-details">
+                    <!-- Portfolio Item Heading -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="page-header">
+                                <span>Title</span>
+                                <small>Genre</small>
+                            </h1>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+
+                    <!-- Portfolio Item Row -->
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+                        </div>
+
+                        <div class="col-md-4">
+                            <h3>Plot</h3>
+                            <p class="movie-plot">Plot goes here</p>
+                            <h3>Actors</h3>
+                            <ul class="movie-actors">
+                                <template id="tmpl-actor">
+                                    <li>Actor 1</li>
+                                </template>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- /.row -->
+                </template>
+                <!-- / #tmpl-movie-results -->
+
+            </div>
+            <!-- /.col-md-9 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+
+
+
+    <!-- Footer -->
+    <footer class="container-fluid navbar-fixed-bottom">
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; 2017</p>
+            </div>
+        </div>
+    </footer>
+    <!-- /.container -->
+
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/index.min.js"></script>
+</body>
+
+</html>
